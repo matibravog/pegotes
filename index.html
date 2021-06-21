@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEGOTES</title>
+    <link rel="icon" type="jpg" href="./favicon.jpg">
+    <link rel="StyleSheet" href="./style.css">
+    <link rel="StyleSheet" href="./desktop.css" media="(min-width: 1024px)">
+</head>
+<body>
+
+<header>
+    <a class="logo" href="./index.html">PEGOTES</a>
+    <div class="menu">
+        <a class="active" href="#">Inicio</a>
+        <a href="#">Videos</a>
+        <a href="#">Discos</a>
+    </div>
+</header>
+
+<main>
+
+    <section class="home">        
+        <video class="home-video" autoplay muted loop src="./images/home-video.mp4"></video> 
+        <div class="home-details">
+            <h1 class="home-title">Punk Rock de Concepcion, Chile</h1>
+            <a class=" boton">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Escuchar!
+            </a>
+        </div>
+    </section>
+
+    <section class="artist">
+        <img class="artist-background" src="./images/home-background.JPG"> 
+    </section>
+
+    <iframe src="https://open.spotify.com/embed/album/0CYjII1V55dwRFIV1cHILk" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    
+
+</main>
+
+
+<script type="text/javascript" src="./vanilla-tilt.min.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector("."), {
+		max: 1,
+		speed: 100
+	});
+
+</script>
+</body>
+<script>
+    const video = document.querySelector(".video")
+    const boton = document.querySelector(".home-boton")
+s
+    boton.onclick = () => video.sound()
+</script>
+</body>
+</html>

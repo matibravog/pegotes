@@ -1,0 +1,15 @@
+header{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+.logo{
+    width: 50%;
+}
+.menu{
+    width: 50%;
+    justify-content: flex-end;
+}
+.menu a{
+    margin: 0 10px;
+}
