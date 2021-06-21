@@ -23,3 +23,6 @@
     opacity: 1;
     bottom: 60px;
 }
+.container{
+    overflow-y: hidden;
+}
