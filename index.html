@@ -16,8 +16,8 @@
     <a class="logo" href="./index.html">PEGOTES</a>
     <div class="menu">
         <a class="active" href="./index.html">Inicio</a>
-        <a href="./video.html">Videos</a>
-        <a href="./discos.html">Discos</a>
+        <a href="./pages/videos/video.html">Videos</a>
+        <a href="./pages/discos/discos.html">Discos</a>
     </div>
 </div>
 
@@ -38,56 +38,61 @@
     </section>
 
     <section class="artist">
-        <img class="artist-background" src="./images/home-background.JPG"> 
-        <div class="container">
-            <div class="box">
-                <h1 class="name">Paulo Bravo</h1>
-                <!-- <a href="#" class="buy">buy</a> -->
-                <div class="details">
+        <img class="artist-background" src="./images/artist-background2.jpg">
+        <img class="artist-background inactive" src="./images/home-background.jpg">
+        <div class="artist-list">
+            <div class="artist-card">
+                <h1 class="artist-name">Paulo Bravo</h1>
+                <div class="artist-details">
                     <a href="https://www.facebook.com/paulote.bravo" target="blank"><img class="rrss facebok" src="./images/facebook.png"> </a>
                     <a href="https://www.instagram.com/paulotebravo"  target="blank"><img class="rrss instagram" src="./images/instagram.png"></a>
                 </div>
-                <img class="product" src="./images/paulo.JPG">
+                <img class="artist-image" src="./images/paulo.JPG">
             </div>
-            <div class="box">
-                <h1 class="name">Juan Bravo</h1>
-                <!-- <a href="#" class="buy">buy</a> -->
-                <div class="details">
+            <div class="artist-card">
+                <h1 class="artist-name">Juan Bravo</h1>
+                <div class="artist-details">
                     <a href="https://www.facebook.com/juanchobravo" target="blank"><img class="rrss facebok" src="./images/facebook.png"> </a>
                     <a href="https://www.instagram.com/juancho_bravol/" target="blank"><img class="rrss instagram" src="./images/instagram.png"></a>
                 </div>
-                <img class="product" src="./images/juano.jpg">
+                <img class="artist-image" src="./images/juano.jpg">
             </div>
-            <div class="box">
-                <h1 class="name">Cesar Badilla</h1>
-                <!-- <a href="#" class="buy">buy</a> -->
-                <div class="details">
+            <div class="artist-card">
+                <h1 class="artist-name">Cesar Badilla</h1>
+                <div class="artist-details">
                     <a href="https://www.facebook.com/cesar.badilla.toledo" target="blank"><img class="rrss facebok" src="./images/facebook.png"> </a>
                     <a href="https://www.instagram.com/cesarbadillat/" target="blank"><img class="rrss instagram" src="./images/instagram.png"></a>
                 </div>
-                <img class="product" src="./images/neme.jpg">
+                <img class="artist-image" src="./images/neme.jpg">
             </div>
-            <div class="box">
-                <h1 class="name">Dario Morales</h1>
-                <!-- <a href="#" class="buy">buy</a> -->
-                <div class="details">
+            <div class="artist-card">
+                <h1 class="artist-name">Dario Morales</h1>
+                <div class="artist-details">
                     <a href="https://www.instagram.com/dario.mrls/" target="blank"><img class="rrss instagram" src="./images/instagram.png"></a>
                 </div>
-                <img class="product" src="./images/dario.jpg">
+                <img class="artist-image" src="./images/dario.jpg">
             </div>
         </div>
     </section>
 
-    <iframe src="https://open.spotify.com/embed/album/0CYjII1V55dwRFIV1cHILk" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    
+    <section class="album">
+        <img class="album-background" src="./images/home-background.jpg">
+        <section class="album-container">
+            <img class="portada-album" src="./images/portada-nsd.jpg">
+            <iframe class="reproductor-album" src="https://open.spotify.com/embed/album/0CYjII1V55dwRFIV1cHILk" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </section>
+    </section>
 
 </main>
 
+<footer>
+
+</footer>
 
 <script type="text/javascript" src="./assets/vanilla-tilt.min.js"></script>
 <script type="text/javascript">
-    VanillaTilt.init(document.querySelectorAll(".box"), {
-        max: 25,
+    VanillaTilt.init(document.querySelectorAll(".artist-card"), {
+        max: 100,
         speed: 1000
     });
 
@@ -98,6 +103,11 @@
 <script>
     const video = document.querySelector(".home_video")
     const boton = document.querySelector(".boton")
+
+    window.addEventListener('scroll', function(){
+            let value = 1 + window.scrollY / -600;
+            video.style.opacity = value
+        })
 
     boton.onclick = () => video.muted = !video.muted
 </script>
