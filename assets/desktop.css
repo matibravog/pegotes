@@ -1,7 +1,8 @@
-header{
+.header{
     flex-direction: row;
     justify-content: space-between;
     padding: 0 10%;
+    height: 100px;
 }
 .logo{
     width: 50%;
@@ -12,4 +13,13 @@ header{
 }
 .menu a{
     margin: 0 10px;
+}
+
+.box:hover .name{
+    opacity: 1;
+    top: 30px;
+}
+.box:hover .rrss{
+    opacity: 1;
+    bottom: 60px;
 }
