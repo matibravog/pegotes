@@ -8,6 +8,7 @@
     <link rel="icon" type="jpg" href="./images/favicon.jpg">
     <link rel="StyleSheet" href="./style.css">
     <link rel="StyleSheet" href="./assets/desktop.css" media="(min-width: 1024px)">
+    <link rel="StyleSheet" href="./assets/tablet.css" media="(min-width: 700px)">
     <link href="https://blogfonts.com/css/aWQ9MTI1Mzc5JnN1Yj0zNzkmYz1jJnR0Zj1MdHRfTWFzYXB1bmsub3RmJm49Y2Z0LW1hc2FwdW5r/cft-masapunk.otf" rel="stylesheet" type="text">
 </head>
 <body>
@@ -38,8 +39,8 @@
     </section>
 
     <section class="artist">
-        <img class="artist-background" src="./images/artist-background2.jpg">
-        <img class="artist-background inactive" src="./images/home-background.jpg">
+        <img class="artist-background" src="./images/artist-background1.jpg">
+        <img class="artist-background inactive" src="./images/artist-background2.jpg">
         <div class="artist-list">
             <div class="artist-card">
                 <h1 class="artist-name">Paulo Bravo</h1>
@@ -76,9 +77,19 @@
     </section>
 
     <section class="album">
-        <img class="album-background" src="./images/home-background.jpg">
+        <img class="album-background" src="./images/artist-background3.jpg">
         <section class="album-container">
-            <img class="portada-album" src="./images/portada-nsd.jpg">
+            <figure  class="portada-album" >
+                <img src="./images/portada-nsd.jpg">
+                    <a class="boton button-album" target="blank" href="https://open.spotify.com/artist/16atbgUEjBKuScffkkQgjw?si=QlGxZXLmQqC_NZKJsyuCGQ&dl_branch=1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Escuchar En Spotify!
+                    </a>
+            </figure>
+
             <iframe class="reproductor-album" src="https://open.spotify.com/embed/album/0CYjII1V55dwRFIV1cHILk" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </section>
     </section>
@@ -93,13 +104,11 @@
 <script type="text/javascript">
     VanillaTilt.init(document.querySelectorAll(".artist-card"), {
         max: 100,
-        speed: 1000
+        speed: 2500
     });
 
 </script>
 
-</script>
-</body>
 <script>
     const video = document.querySelector(".home_video")
     const boton = document.querySelector(".boton")
@@ -111,5 +120,6 @@
 
     boton.onclick = () => video.muted = !video.muted
 </script>
+</body>
 </body>
 </html>

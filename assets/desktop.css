@@ -24,14 +24,7 @@
     border: 3px solid white;
     box-shadow: 0 0 10px #ffffff, 0 0 40px #2196f3, 0 0 80px #2196f3
 }
-.box:hover .name{
-    opacity: 1;
-    top: 30px;
-}
-.box:hover .rrss{
-    opacity: 1;
-    bottom: 60px;
-}
+
 
 .inactive{
     display: none;
@@ -39,14 +32,22 @@
 .artist, .album{
     flex-direction: row;
 }
+.artist-background, .album-background{
+    height: 100vh;
+}
+
 .album-container{
     width: 100vw;
+    padding: 0 100px;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
+
 .portada-album{
     width: 40%;
+    top: 0;
+    left: 0;
 }
 .reproductor-album{
     width: 30%;

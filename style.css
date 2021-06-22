@@ -199,7 +199,7 @@ a span:nth-child(4){
 .artist-background, .album-background{
     position: relative;
     width: 100vw;
-    height: 125vh;
+    height: 1000px;
     object-fit: cover;
     opacity: 0.5;
 }
@@ -222,7 +222,7 @@ a span:nth-child(4){
     align-items: center;
     width: 250px;
     height: 400px;
-    margin: 50px;
+    margin: 25px;
     background-color: rgb(0, 0, 0);
     border-radius: 20px;
     transform-style: preserve-3d;
@@ -298,7 +298,35 @@ a span:nth-child(4){
 .portada-album{
     margin: 50px 0;
     width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     animation: portada 1s linear infinite alternate;
+}
+.portada-album img{
+    width: 100%;
+    height: 100%;
+}
+.button-album{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spotify 4s linear infinite alternate;
+    top: 0;
+}
+
+@keyframes spotify{
+    0%{
+        opacity: 0;
+        background: none;
+    }
+    100%{
+        opacity: 0.8;
+        background: #2196f3;
+    }
 }
 @keyframes portada{
     0%{
@@ -308,6 +336,7 @@ a span:nth-child(4){
         transform: scale(1.1);
     }
 }
+
 .reproductor-album{
     width: 65%;
     height: 400px;
