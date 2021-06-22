@@ -4,3 +4,9 @@
 .album-background{
     height: 125vh;
 }
+.menu-mobile{
+    width: 50vw;
+}
+.active{
+    left: 50vw;
+}
