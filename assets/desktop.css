@@ -7,7 +7,9 @@
 .logo{
     width: 50%;
 }
+
 .menu{
+    grid-area: logo;
     width: 50%;
     justify-content: flex-end;
 }
