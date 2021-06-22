@@ -7,7 +7,7 @@
     <title>PEGOTES</title>
     <link rel="icon" type="jpg" href="./images/favicon.jpg">
     <link rel="StyleSheet" href="./style.css">
-    <link rel="StyleSheet" href="./assets/desktop.css" media="(min-width: 1080px)">
+    <link rel="StyleSheet" href="./assets/desktop.css" media="(min-width: 1024px)">
     <link rel="StyleSheet" href="./assets/tablet.css" media="(min-width: 700px)">
     <link href="https://blogfonts.com/css/aWQ9MTI1Mzc5JnN1Yj0zNzkmYz1jJnR0Zj1MdHRfTWFzYXB1bmsub3RmJm49Y2Z0LW1hc2FwdW5r/cft-masapunk.otf" rel="stylesheet" type="text">
 </head>
@@ -15,35 +15,58 @@
 
 <div class="header">
     <a class="logo" href="./index.html">PEGOTES</a>
-    <div class="menu">
-        <ul class="menu-mobile">
-            <a class="active" href="./index.html">Inicio</a>
-            <a href="./pages/videos/video.html">Videos</a>
-            <a href="./pages/discos/discos.html">Discos</a>
-        </ul>
-    </div>
+    <div class="menu-circle"></div>
+        <div class="menu-mobile">
+            <a href="./index.html" class="boton">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Inicio!
+            </a>
+            <a href="./pages/videos/video.html" class="boton">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Videos!
+            </a>
+            <a href="./pages/discos/discos.html" class="boton">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Discos!
+            </a>
+        </div>
 </div>
 
 <main>
 
     <section class="home">        
         <video class="home_video" autoplay muted loop src="./images/home-video.mp4"></video> 
+        <section class="home-animation">
+            <h1 class="am1">Hola! Bienvendidos</h1>
+            <h1 class="am2">desliza hacia abajo para interactuar</h1>
+        </section>
         <div class="home-details">
-            <h1 class="home-title">Punk Rock de Concepcion, Chile</h1>
-            <a class="boton">
+            <h1 class="home-title">Pegotes - Mil Voces</h1>
+            <a class="boton action">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                Escuchar!
+                activar audio
             </a>
         </div>
     </section>
 
-    <section class="pegotes"
+    <section class="artist">
+        <img class="artist-background" src="./images/background1.jpg">
+    </section>
 
     <section class="artist">
-        <img class="artist-background" src="./images/artist-background1.jpg">
+        <img class="artist-background" src="./images/background2.png">
         <img class="artist-background inactive" src="./images/artist-background2.jpg">
         <div class="artist-list">
             <div class="artist-card">
@@ -81,7 +104,7 @@
     </section>
 
     <section class="album">
-        <img class="album-background" src="./images/artist-background3.jpg">
+        <img class="album-background" src="./images/background3.jpg">
         <section class="album-container">
             <figure  class="portada-album" >
                 <img src="./images/portada-nsd.jpg">
@@ -106,23 +129,29 @@
 
 <script type="text/javascript" src="./assets/vanilla-tilt.min.js"></script>
 <script type="text/javascript">
-    VanillaTilt.init(document.querySelectorAll(".artist-card"), {
-        max: 100,
-        speed: 500
-    });
 
-</script>
+    const video_home = document.querySelector(".home_video")
+    const boton_header  = document.querySelector(".menu-circle")
+    const menu_mobile  = document.querySelector(".menu-mobile")
+    const boton_action = document.querySelector(".action")
+        
+    boton_header.addEventListener("click", function mostrarMenu(){
+        menu_mobile.classList.toggle("active")
+        boton_header.classList.toggle("circle-active")
+    })
 
-<script>
-    const video = document.querySelector(".home_video")
-    const boton = document.querySelector(".boton")
+    boton_action.onclick = () => video_home.muted = !video_home.muted
 
     window.addEventListener('scroll', function(){
             let value = 1 + window.scrollY / -600;
             video.style.opacity = value
         })
 
-    boton.onclick = () => video.muted = !video.muted
+
+    VanillaTilt.init(document.querySelectorAll(".artist-card"), {
+        max: 25,
+        speed: 200
+    });
 </script>
 </body>
 </body>
