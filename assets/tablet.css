@@ -1,8 +1,9 @@
-.inactive{
-    display: none;
+.logo{
+    font-size: 7rem;
 }
-.album-background{
-    height: 125vh;
+.menu-circle{
+    width: 35px;
+    height: 35px;
 }
 .menu-mobile{
     width: 50vw;
@@ -10,6 +11,25 @@
 .active{
     left: 50vw;
 }
-.home-animation h1{
+
+.home-animation .am1, .home-animation .am2{
+    font-size: 8rem;
+}
+.home-title{
     font-size: 5rem;
+}
+
+.album-background{
+    height: 110vh;
+}
+.album-title{
+    font-size: 7rem;
+    margin-bottom: 30px;
+}
+.album-portada{
+    width: 50%;
+}
+.album-details{
+    width: 90%;
+    font-size: 3rem;
 }
