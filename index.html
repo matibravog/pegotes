@@ -17,26 +17,20 @@
     <a class="logo" href="./index.html">PEGOTES</a>
     <div class="menu-circle"></div>
         <div class="menu-mobile">
-            <a href="./index.html" class="boton">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Inicio!
+            <a href="./index.html" class="menu-boton boton-border">
+                Inicio
             </a>
-            <a href="./pages/videos/video.html" class="boton">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Videos!
+            <a href="./pages/videos/video.html" class="menu-boton">
+                Videos
             </a>
-            <a href="./pages/discos/discos.html" class="boton">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Discos!
+            <a href="./pages/discos/discos.html" class="menu-boton">
+                Discos
+            </a>
+            <a href="./pages/fotos/fotos.html" class="menu-boton">
+                Fotos
+            </a>
+            <a href="./pages/shows/shows.html" class="menu-boton">
+                Shows
             </a>
         </div>
 </div>
@@ -46,8 +40,8 @@
     <section class="home">        
         <video class="home_video" autoplay muted loop src="./images/home-video.mp4"></video> 
         <section class="home-animation">
-            <h1 class="am1">Hola! Bienvendidos</h1>
-            <h1 class="am2">desliza hacia abajo para interactuar</h1>
+            <h1 class="am1">Bienvendid@</h1>
+            <h1 class="am2">Activa el audio con el boton de abajo</h1>
         </section>
         <div class="home-details">
             <h1 class="home-title">Pegotes - Mil Voces</h1>
@@ -128,31 +122,7 @@
 </footer>
 
 <script type="text/javascript" src="./assets/vanilla-tilt.min.js"></script>
-<script type="text/javascript">
-
-    const video_home = document.querySelector(".home_video")
-    const boton_header  = document.querySelector(".menu-circle")
-    const menu_mobile  = document.querySelector(".menu-mobile")
-    const boton_action = document.querySelector(".action")
-        
-    boton_header.addEventListener("click", function mostrarMenu(){
-        menu_mobile.classList.toggle("active")
-        boton_header.classList.toggle("circle-active")
-    })
-
-    boton_action.onclick = () => video_home.muted = !video_home.muted
-
-    window.addEventListener('scroll', function(){
-            let value = 1 + window.scrollY / -600;
-            video.style.opacity = value
-        })
-
-
-    VanillaTilt.init(document.querySelectorAll(".artist-card"), {
-        max: 25,
-        speed: 200
-    });
-</script>
+<script src="./assets/index.js"></script>
 </body>
 </body>
 </html>

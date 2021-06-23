@@ -1,29 +1,37 @@
 .header{
     flex-direction: row;
-    justify-content: space-between;
     padding: 0 10%;
     height: 100px;
+    z-index: 2;
 }
 .logo{
     width: 50%;
 }
+.menu-circle{
+    display: none;
+}
 .menu{
-    width: 50%;
     justify-content: flex-end;
 }
-.menu a{
-    margin: 0 10px;
+.menu-mobile{
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-end;
+    left: 0;
+    height: 100px;
+    background: none;
 }
-.artist-card{
-    animation: none;
-}
-.boton:hover{
+.menu-boton{
+    font-size: 1.5rem;
+    min-width: 80px;
+    border-radius: 0;
+    box-shadow: none;
     transition: 500ms;
-    color: #cccccc;
-    background: #2196f3;
-    border: 3px solid white;
-    box-shadow: 0 0 10px #ffffff, 0 0 40px #2196f3, 0 0 80px #2196f3
 }
-.inactive{
-    display: none;
+.boton-border{
+    border-bottom: 1px solid #2196f3;
+}
+.menu-boton:hover{
+    border-radius: 10px;
+    background-color: #2195f391;
 }

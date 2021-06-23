@@ -1,0 +1,15 @@
+.inactive{
+    display: none;
+}
+.album-background{
+    height: 125vh;
+}
+.menu-mobile{
+    width: 50vw;
+}
+.active{
+    left: 50vw;
+}
+.home-animation h1{
+    font-size: 5rem;
+}

@@ -1,44 +1,45 @@
 .header{
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100px;
-    z-index: 1;
-    background: linear-gradient(to top ,transparent, black);
-}
-.logo{
-    color: white;
-    text-decoration: none;
-    font-size: 5rem;
-    margin: 10px;
-    -webkit-text-stroke: 1px black;
-}
-.menu{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: auto;
-}
-.header{
     flex-direction: row;
-    justify-content: space-between;
     padding: 0 10%;
-    height: 100px;z-index: 2;
+    height: 100px;
+    z-index: 2;
 }
 .logo{
     width: 50%;
 }
-
+.menu-circle{
+    display: none;
+}
 .menu{
-    width: 50%;
     justify-content: flex-end;
 }
-.menu a{
-    margin: 0 10px;
+.menu-mobile{
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-end;
+    left: 0;
+    height: 100px;
+    background: none;
 }
+.menu-boton{
+    font-size: 1.5rem;
+    min-width: 80px;
+    border-radius: 0;
+    box-shadow: none;
+    transition: 500ms;
+}
+.boton-border{
+    border-bottom: 1px solid #2196f3;
+}
+.menu-boton:hover{
+    border-radius: 10px;
+    background-color: #2195f391;
+}
+
+.home-animation h1{
+    font-size: 10rem;
+}
+
 .artist-card{
     animation: none;
 }
@@ -49,8 +50,6 @@
     border: 3px solid white;
     box-shadow: 0 0 10px #ffffff, 0 0 40px #2196f3, 0 0 80px #2196f3
 }
-
-
 .inactive{
     display: none;
 }
@@ -60,10 +59,6 @@
 .artist-background, .album-background{
     height: 100vh;
 }
-.artist-list{
-    width: 100%;
-}
-
 .album-container{
     width: 100vw;
     padding: 0 100px;
@@ -71,7 +66,6 @@
     justify-content: space-evenly;
     align-items: center;
 }
-
 .portada-album{
     width: 40%;
     top: 0;

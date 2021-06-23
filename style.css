@@ -64,15 +64,24 @@ body{
     transition: 500ms;
     background: rgba(0, 64, 94, 0.95);
 }
-.menu-mobile a{
+.menu-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 3rem;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;   
+    min-width: 150px;
     border-radius: 15px;
+    box-shadow: 0 0 10px #ffffff, 0 0 40px #2196f3, 0 0 80px #2196f3;
     background: none;
-    box-shadow: 0 0 10px #ffffff, 0 0 40px #2196f3, 0 0 80px #2196f3
 }
-
 .active{
     left: 25vw;
 }
+
 main{
     display: flex;
     flex-direction: column;
@@ -109,8 +118,9 @@ main{
     position: absolute;
     transform-style: preserve-3d;
     text-align: center;
-    top: 25%;
-    font-size: 5rem;
+    top: 35%;
+    font-size: 3rem;
+    width: 90vw;
 }
 .am1{
     animation: am1 5s linear infinite alternate;
@@ -194,8 +204,7 @@ main{
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
