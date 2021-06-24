@@ -56,6 +56,7 @@
 }
 
 .artist-background, .album-background{
+    width: 100vw;
     height: 100vh;
 }
 .album-container{
@@ -73,7 +74,7 @@
     width: 50%;
 }
 .album-portada img{
-    width: 100%;
+    width: 70%;
 }
 .album-details-desktop{
     width: 50%;
@@ -81,6 +82,4 @@
 .album-details{
     width: 50%;
 }
-.reproductor-album{
-    width: 30%;
-}
+
