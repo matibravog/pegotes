@@ -70,16 +70,31 @@
     justify-content: center;
     position: relative;
 }
+.album-details-desktop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .album-portada{
     width: 50%;
 }
 .album-portada img{
-    width: 70%;
+    width: 50%;
 }
 .album-details-desktop{
     width: 50%;
 }
 .album-details{
+    font-size: 3rem;
     width: 50%;
 }
 
+
+.artist-desktop{
+    display: flex;
+    flex-direction: row;
+}
+.artist-image{
+
+}

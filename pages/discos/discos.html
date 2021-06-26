@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PEGOTES</title>
     <link rel="icon" type="jpg" href="./images/favicon.jpg">
+    <link rel="StyleSheet" href="../../assets/header-footer.css">
     <link rel="StyleSheet" href="./style.css">
     <link rel="StyleSheet" href="./assets/tablet.css" media="(min-width: 700px)">
     <link rel="StyleSheet" href="./assets/desktop.css" media="(min-width: 1024px)">
@@ -14,7 +15,7 @@
 <body>
 
     <div class="header">
-        <a class="logo" href="../../index.html">PEGOTES</a>
+        <a class="logo" href="../../index.html"><img src="../../images/logo.png" ></a>
         <div class="menu-circle"></div>
             <div class="menu-mobile">
                 <a href="../../index.html" class="menu-boton">
@@ -23,14 +24,11 @@
                 <a href="../videos/video.html" class="menu-boton">
                     Videos
                 </a>
-                <a href="./discos/discos.html" class="menu-boton  boton-border">
+                <a href="./discos.html" class="menu-boton  boton-border">
                     Discos
                 </a>
                 <a href="../fotos/fotos.html" class="menu-boton">
                     Fotos
-                </a>
-                <a href="../shows/shows.html" class="menu-boton">
-                    Shows
                 </a>
             </div>
     </div>
@@ -68,17 +66,7 @@
 
 
 <script type="text/javascript" src="./assets/vanilla-tilt.min.js"></script>
-<script type="text/javascript">
-    VanillaTilt.init(document.querySelectorAll(".box"), {
-        max: 25,
-        speed: 1000
-    });
-
-    const video = document.querySelector(".home_video")
-    const boton = document.querySelector(".boton")
-
-    boton.onclick = () => video.muted = !video.muted
-</script>
+<script src="../../assets/index.js"></script>
 </body>
 </body>
 </html>

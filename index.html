@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PEGOTES</title>
     <link rel="icon" type="jpg" href="./images/favicon.jpg">
+    <link rel="StyleSheet" href="./assets/header-footer.css">
     <link rel="StyleSheet" href="./style.css">
     <link rel="StyleSheet" href="./assets/desktop.css" media="(min-width: 1080px)">
     <link rel="StyleSheet" href="./assets/tablet.css" media="(min-width: 700px)">
@@ -13,8 +14,8 @@
 </head>
 <body>
 
-<div class="header">
-    <a class="logo" href="./index.html">PEGOTES</a>
+<header class="header">
+    <a class="logo" href="./index.html"><img src="./images/logo.png" ></a>
     <div class="menu-circle"></div>
     <div class="menu-mobile">
         <a href="./index.html" class="menu-boton boton-border">
@@ -29,11 +30,11 @@
         <a href="./pages/fotos/fotos.html" class="menu-boton">
             Fotos
         </a>
-        <a href="./pages/shows/shows.html" class="menu-boton">
-            Shows
-        </a>
+        <!-- <a href="./pages/shows/shows.html" class="menu-boton">
+            Merch
+        </a> -->
     </div>
-</div>
+</header>
 
 <main>
 
@@ -43,7 +44,6 @@
             <h1 class="am1"></h1>
         </section>
         <div class="home-details">
-            <h1 class="home-title">Pegotes - Mil Voces</h1>
             <a class="boton action">
                 <span></span>
                 <span></span>
@@ -51,11 +51,8 @@
                 <span></span>
                 activar audio
             </a>
+            <h1 class="home-title">Escuchar: "Mil Voces"</h1>
         </div>
-    </section>
-
-    <section class="artist">
-        <img class="artist-background" src="./images/background1.jpg">
     </section>
 
     <section class="album">
@@ -85,42 +82,47 @@
 
     <section class="artist">
         <img class="artist-background" src="./images/background2.png">
-        <img class="artist-background inactive" src="./images/artist-background2.jpg">
+        <img class="artist-background inactive" src="./images/background3.jpg">
         <div class="artist-list">
-            <div class="artist-card">
-                <h1 class="artist-name">Paulo Bravo</h1>
-                <p class="artist-instrument">Voz y Guitara</p>
-                <div class="artist-details">
-                    <a href="https://www.facebook.com/paulote.bravo" target="blank"><img class="rrss facebok" src="./images/facebook.png"> </a>
-                    <a href="https://www.instagram.com/paulotebravo"  target="blank"><img class="rrss instagram" src="./images/instagram.png"></a>
+
+            <div class="artist-desktop">
+                <div class="artist-card">
+                    <h1 class="artist-name">Paulo Bravo</h1>
+                    <p class="artist-instrument">Voz y Guitara</p>
+                    <div class="artist-details">
+                        <a href="https://www.facebook.com/paulote.bravo" target="blank"><img class="rrss facebok" src="./images/rrss/fb.png"> </a>
+                        <a href="https://www.instagram.com/paulotebravo"  target="blank"><img class="rrss instagram" src="./images/rrss/ig.png"></a>
+                    </div>
+                    <img class="artist-image" src="./images/paulo.JPG">
                 </div>
-                <img class="artist-image" src="./images/paulo.JPG">
+                <div class="artist-card">
+                    <h1 class="artist-name">Juan Bravo</h1>
+                    <p class="artist-instrument">Bateria</p>
+                    <div class="artist-details">
+                        <a href="https://www.facebook.com/juanchobravo" target="blank"><img class="rrss facebok" src="./images/rrss/fb.png"> </a>
+                        <a href="https://www.instagram.com/juancho_bravol/" target="blank"><img class="rrss instagram" src="./images/rrss/ig.png"></a>
+                    </div>
+                    <img class="artist-image" src="./images/juano.jpg">
+                </div>
             </div>
-            <div class="artist-card">
-                <h1 class="artist-name">Juan Bravo</h1>
-                <p class="artist-instrument">Bateria</p>
-                <div class="artist-details">
-                    <a href="https://www.facebook.com/juanchobravo" target="blank"><img class="rrss facebok" src="./images/facebook.png"> </a>
-                    <a href="https://www.instagram.com/juancho_bravol/" target="blank"><img class="rrss instagram" src="./images/instagram.png"></a>
+            <div class="artist-desktop">
+                <div class="artist-card">
+                    <h1 class="artist-name">Cesar Badilla</h1>
+                    <p class="artist-instrument">Bajo</p>
+                    <div class="artist-details">
+                        <a href="https://www.facebook.com/cesar.badilla.toledo" target="blank"><img class="rrss facebok" src="./images/rrss/fb.png"> </a>
+                        <a href="https://www.instagram.com/cesarbadillat/" target="blank"><img class="rrss instagram" src="./images/rrss/ig.png"></a>
+                    </div>
+                    <img class="artist-image" src="./images/neme.jpg">
                 </div>
-                <img class="artist-image" src="./images/juano.jpg">
-            </div>
-            <div class="artist-card">
-                <h1 class="artist-name">Cesar Badilla</h1>
-                <p class="artist-instrument">Bajo</p>
-                <div class="artist-details">
-                    <a href="https://www.facebook.com/cesar.badilla.toledo" target="blank"><img class="rrss facebok" src="./images/facebook.png"> </a>
-                    <a href="https://www.instagram.com/cesarbadillat/" target="blank"><img class="rrss instagram" src="./images/instagram.png"></a>
+                <div class="artist-card">
+                    <h1 class="artist-name">Dario Morales</h1>
+                    <p class="artist-instrument">Guitarra</p>
+                    <div class="artist-details">
+                        <a href="https://www.instagram.com/dario.mrls/" target="blank"><img class="rrss instagram" src="./images/rrss/ig.png"></a>
+                    </div>
+                    <img class="artist-image" src="./images/dario.jpg">
                 </div>
-                <img class="artist-image" src="./images/neme.jpg">
-            </div>
-            <div class="artist-card">
-                <h1 class="artist-name">Dario Morales</h1>
-                <p class="artist-instrument">Guitarra</p>
-                <div class="artist-details">
-                    <a href="https://www.instagram.com/dario.mrls/" target="blank"><img class="rrss instagram" src="./images/instagram.png"></a>
-                </div>
-                <img class="artist-image" src="./images/dario.jpg">
             </div>
         </div>
     </section>
@@ -130,6 +132,29 @@
 </main>
 
 <footer>
+
+    <h2>Siguenos en:</h2>
+
+    <figure class="social-media">
+
+        <a target="blank" href="https://open.spotify.com/artist/16atbgUEjBKuScffkkQgjw?si=KW53CTdbS72HXmQFsCkdIQ&dl_branch=1">
+            <img class="rrss spotify" src="./images/rrss/sp.png">
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCDlVx30jB1kCSolgpIK48-Q">
+            <img class="rrss youtube" src="./images/rrss/yt.png">
+        </a>
+
+        <a target="blank" href="https://www.facebook.com/pegotes.banda">
+            <img class="rrss facebok" src="./images/rrss/fb.png"> 
+        </a>
+        <a target="blank" href="https://www.instagram.com/pegotes.banda/">
+            <img class="rrss instagram" src="./images/rrss/ig.png">
+        </a>
+        
+    </figure>
+
+    <p>Todos los derechos reservados</p>
 
 </footer>
 
