@@ -19,34 +19,6 @@ main{
     height: 100vh;
     object-fit: cover;
 }
-/* .home-animation{
-    transform-style: preserve-3d;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    background: linear-gradient(to bottom, transparent, black);
-}
-.home-animation h1{
-    position: absolute;
-    transform-style: preserve-3d;
-    text-align: center;
-    top: 35%;
-    font-size: 3rem;
-    width: 90vw;
-}
-.am1{
-    animation: am1 infinite ;
-}
-
-@keyframes am1{
-    0%{
-
-    }
-} */
 
 .home-details{
     position: absolute;
@@ -184,7 +156,7 @@ a span:nth-child(4){
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    opacity: 0.3;
+    opacity: 0.2;
 }
 .album-container{
     position: absolute;
@@ -280,7 +252,7 @@ a span:nth-child(4){
     width: 100vw;
     height: 1050px;
     object-fit: cover;
-    opacity: 0.3;
+    opacity: 0.2;
 }
 .artist-list{
     position: absolute;
@@ -297,7 +269,7 @@ a span:nth-child(4){
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    width: 300px;
     height: 400px;
     margin-bottom: 50px;
     border-radius: 20px;

@@ -64,7 +64,7 @@ body{
     width: 75vw;
     height: 100vh;
     transition: 500ms;
-    background: rgba(0, 64, 94, 0.95);
+    background: rgba(0, 75, 102, 0.99);
 }
 .menu-boton{
     display: flex;
@@ -74,13 +74,18 @@ body{
     font-size: 3rem;
     color: white;
     padding: 5px 10px;
-    margin: 5px;   
+    margin: 25px;   
     min-width: 150px;
     border-radius: 15px;
-    box-shadow: 0 0 10px #ffffff, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    box-shadow: -3px -3px 10px 1px rgba(255, 255, 255, 0.603), 10px 10px 10px 1px black;
     background: none;
 }
-
+.boton-border{
+    box-shadow: inset 10px 10px 10px 1px rgb(29, 29, 29), inset -2px -2px 10px 1px rgb(170, 170, 170);
+}
+.menu-boton:active{
+    box-shadow: inset 5px 5px 10px 1px rgb(32, 32, 32), inset -2px -2px 10px 1px rgb(170, 170, 170);
+}
 .active{
     left: 25vw;
 }
