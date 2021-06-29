@@ -2,23 +2,24 @@ const main = document.querySelector("main")
 const video_home = document.querySelector(".home_video")
 const boton_header  = document.querySelector(".menu-circle")
 const menu_mobile  = document.querySelector(".menu-mobile")
-const boton_action = document.querySelector(".action")
-const titulo = document.querySelector(".am1")
+const homeBoton = document.querySelector(".home-boton")
+const homeTitle = document.querySelector(".home-title")
 
-const saludo = [
-    'Hola',
-    'como estas?',
-    'bienvenido a nuestra pagina web',
-]
-
-
-boton_header.addEventListener("click", function mostrarMenu(){
+homeTitle.innerHTML = 'Escuchar: "Mil Voces"'
+homeBoton.textContent = 'ACTIVAR AUDIO'
+boton_header.onclick = () => {
     menu_mobile.classList.toggle("active")
     boton_header.classList.toggle("circle-active")
     main.classList.toggle("ocultar")
-})
+}
 
-boton_action.onclick = () => video_home.muted = !video_home.muted
+
+homeBoton.onclick = () => {
+    video_home.muted = !video_home.muted
+    homeBoton.innerHTML = 'MUTEAR'
+    homeTitle.innerHTML = 'Desliza hacia abajo'
+    // homeBoton.classList.toggle('home-boton-inactive')
+}
 
 window.addEventListener('scroll', function(){
         let value = 1 + window.scrollY / -600;
