@@ -60,6 +60,11 @@
     padding: 20px;
 }
 
+.videoclips-video{
+    width: 300px;
+    height: auto;
+}
+
 .artist-background{
     min-height: 700px;
 }
@@ -74,6 +79,11 @@
 
 
 .discografia-button{
+    width: auto;
+    font-size: 2rem;
+    padding: 20px;
+}
+.videoclips-button{
     width: auto;
     font-size: 2rem;
     padding: 20px;

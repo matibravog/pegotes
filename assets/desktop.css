@@ -38,7 +38,6 @@
 .banda{
     height: 100vh;
 }
-
 .album{
     height: 100vh;
 }
@@ -67,7 +66,10 @@
 .album-button{
     grid-area: button;
 }
-
+.videoclips-slide{
+    justify-content: center;
+    overflow: hidden;
+}
 .artist{
     height: 100vh;
 }
@@ -75,9 +77,7 @@
     justify-content: center;
     overflow: hidden;
 }
-footer{
-    padding: 5%;
-}
+
 
 .discografia-background{
     height: 100vh;
@@ -99,4 +99,7 @@ footer{
     transition: 300ms;
     background-color: #2196f3;
     box-shadow: 0 0 10px #ffffff, 0 0 40px #2196f3, 0 0 40px #2196f3 
+}
+footer{
+    padding: 5%;
 }
