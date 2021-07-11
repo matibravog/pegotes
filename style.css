@@ -81,7 +81,8 @@ main{
     opacity: 0.5;
 }
 .home{
-    display: grid;
+    position: relative;
+    display: flex;
     justify-content: center;
     align-items: flex-end;
     width: 100vw;
@@ -94,19 +95,18 @@ main{
 }
 .home-details{
     position: absolute;
-    left: 0;
-    bottom: 0;
+    bottom: -1px;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background: linear-gradient(transparent, transparent, black);
+    background: linear-gradient(transparent, black);
 }
 .home-title{
     position: relative;
-    bottom: 10px;
+    bottom: 15px;
     text-align: center;
     font-size: 2.5rem;
 }
@@ -144,12 +144,12 @@ main{
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: auto;
+    height: 100vh;
 }
 .banda-background{
     position: relative;
     width: 100vw;
-    min-height: 600px;
+    height: 100vh;
     object-fit: cover;
     opacity: 0.2;
 }
@@ -158,9 +158,10 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 80%;
     height: 100%;
+    padding: 50px 0;
 }
 .banda-title{
     margin: 10px 0;
@@ -177,7 +178,7 @@ main{
     position: relative;
     width: 200px;
     min-height: 40px;
-    margin: 0 auto;
+    margin: 20px auto;
     overflow: hidden;
     color: white;
     font-size: 1.5rem;
@@ -270,12 +271,12 @@ a span:nth-child(4){
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: auto;
+    height: 100vh;
 }
 .album-background{
     position: relative;
     width: 100vw;
-    min-height: 600px;
+    height: 100vh;
     object-fit: cover;
     opacity: 0.2;
 }
@@ -284,7 +285,7 @@ a span:nth-child(4){
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 80%;
     height: 100%;
 }
@@ -316,7 +317,7 @@ a span:nth-child(4){
 .album-details{
     text-align: center;
     margin: 20px 0;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .album-button{
@@ -426,14 +427,18 @@ a span:nth-child(4){
     object-fit: cover;
     opacity: 0.2;
 }
-.artist-list{
+.artist-container{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100vw;
     height: 100%;
+    padding: 50px 0;
 }
 .artist-title{
+    margin: 10px 0;
     text-align: center;
-    margin: 50px 0px 30px;
     font-size: 3.5rem;
 }
 .artist-slide{
