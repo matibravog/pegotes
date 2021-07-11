@@ -6,17 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PEGOTES</title>
     <link rel="icon" type="jpg" href="./images/favicon.jpg">
-    <link rel="StyleSheet" href="./assets/header-footer.css">
     <link rel="StyleSheet" href="./style.css">
-    <link rel="StyleSheet" href="./assets/desktop.css" media="(min-width: 1080px)">
     <link rel="StyleSheet" href="./assets/tablet.css" media="(min-width: 600px)">
-    <link href="https://blogfonts.com/css/aWQ9MTI1Mzc5JnN1Yj0zNzkmYz1jJnR0Zj1MdHRfTWFzYXB1bmsub3RmJm49Y2Z0LW1hc2FwdW5r/cft-masapunk.otf" rel="stylesheet" type="text">
+    <link rel="StyleSheet" href="./assets/desktop.css" media="(min-width: 1080px)">
 </head>
 <body>
-
+    
 <header class="header">
-    <a class="logo" href="./index.html"><img src="./images/logo.png" ></a>
-    <div class="menu-circle"></div>
+    <a class="header-logo" href="./index.html"><img src="./images/logo.png" ></a>
+    <div class="header-button"></div>
     <div class="menu-mobile">
         <a href="./index.html" class="menu-boton boton-border">
             Inicio
@@ -34,151 +32,87 @@
 </header>
 
 <main>
-
     <section class="home">        
         <video class="home_video" autoplay muted loop src="./images/home-video.mp4"></video> 
         <div class="home-details">
-            <a class="home-boton">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                
-            </a>
             <h1 class="home-title"></h1>
-            <img class="home-arrows" src="./images/arrows.png">
+            <a class="home-button"></a>
+            <a href="#album"><img class="home-arrows" src="./images/arrows.png"></a>
         </div>
     </section>
-
-
-    <section class="album">
-        <img class="album-background" src="./images/background1.jpg">
-        <section class="album-container">
-            <h1 class="album-title">Banda</h1>
-            <section class="album-desktop">
-                <figure  class="album-portada" >
-                    <img src="./images/background1.jpg">
-                </figure>
-
-                <section class="album-details-desktop">
-                    <p class="album-details">Aqui va una breve reseña de la banda, hablar de las motivaciones y lo que intenta representar pegotes. <br> <br> y ojala hablar indirectamente de las canciones para incitar a escucharlas</p>
-                    <a class="home-boton" target="blank" href="https://open.spotify.com/artist/16atbgUEjBKuScffkkQgjw?si=QlGxZXLmQqC_NZKJsyuCGQ&dl_branch=1">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Saber mas
-                    </a>
-                </section>
-            </section>
-        </section>
-    </section>
     
-    <section class="album">
+    <section class="album" id="album">
         <img class="album-background" src="./images/background2.png">
         <section class="album-container">
             <h1 class="album-title">Album</h1>
-            <section class="album-desktop">
-                <figure  class="album-portada" >
-                    <img src="./images/portada-nsd.jpg">
-
-                </figure>
-                <section class="album-details-desktop">
-                    <h1 class="album-subtitle"></h1>
-                    <p class="album-details">Aqui va una breve reseña del disco, lo ideal es rescatar lo mas interesante y plasmarlo en un parrafo breve.
-                    </p>
-                    <a class="home-boton " target="blank" href="https://open.spotify.com/artist/16atbgUEjBKuScffkkQgjw?si=QlGxZXLmQqC_NZKJsyuCGQ&dl_branch=1">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Discografia completa!
-                    </a>
-                </section>
-            </section>
+            <figure  class="album-portada" >
+                <img src="./images/portada-nsd.jpg">
+            </figure>
+            <p class="album-details">
+                Aqui va una breve reseña del disco, lo ideal es rescatar lo mas interesante y plasmarlo en un parrafo breve.
+                Aqui va una breve reseña del disco, lo ideal es rescatar lo mas interesante 
+            </p>
+            <a class="album-button " target="blank" href="https://open.spotify.com/artist/16atbgUEjBKuScffkkQgjw?si=QlGxZXLmQqC_NZKJsyuCGQ&dl_branch=1">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Saber mas
+            </a>
         </section>
     </section>
 
     <section class="artist">
         <img class="artist-background" src="./images/background3.jpg">
-        <img class="artist-background inactive" src="./images/background3.jpg">
         <div class="artist-list">
-
-            <div class="artist-desktop">
+            <h1 class="artist-title">Musicos</h1>
+            <div class="artist-slide">
                 <div class="artist-card">
                     <h1 class="artist-name">Paulo Bravo</h1>
-                    <p class="artist-instrument">Voz y Guitara</p>
-                    <div class="artist-details">
-                        <a href="https://www.facebook.com/paulote.bravo" target="blank"><img class="rrss facebok" src="./images/rrss/fb.png"> </a>
-                        <a href="https://www.instagram.com/paulotebravo"  target="blank"><img class="rrss instagram" src="./images/rrss/ig.png"></a>
-                    </div>
                     <img class="artist-image" src="./images/paulo.JPG">
+                    <p class="artist-instrument">Voz y Guitarra</p>
                 </div>
+    
                 <div class="artist-card">
                     <h1 class="artist-name">Juan Bravo</h1>
-                    <p class="artist-instrument">Bateria</p>
-                    <div class="artist-details">
-                        <a href="https://www.facebook.com/juanchobravo" target="blank"><img class="rrss facebok" src="./images/rrss/fb.png"> </a>
-                        <a href="https://www.instagram.com/juancho_bravol/" target="blank"><img class="rrss instagram" src="./images/rrss/ig.png"></a>
-                    </div>
                     <img class="artist-image" src="./images/juano.jpg">
+                    <p class="artist-instrument">Bateria</p>
                 </div>
-            </div>
-            <div class="artist-desktop">
+    
                 <div class="artist-card">
                     <h1 class="artist-name">Cesar Badilla</h1>
-                    <p class="artist-instrument">Bajo</p>
-                    <div class="artist-details">
-                        <a href="https://www.facebook.com/cesar.badilla.toledo" target="blank"><img class="rrss facebok" src="./images/rrss/fb.png"> </a>
-                        <a href="https://www.instagram.com/cesarbadillat/" target="blank"><img class="rrss instagram" src="./images/rrss/ig.png"></a>
-                    </div>
                     <img class="artist-image" src="./images/neme.jpg">
+                    <p class="artist-instrument">Bajo</p>
                 </div>
+    
                 <div class="artist-card">
                     <h1 class="artist-name">Dario Morales</h1>
-                    <p class="artist-instrument">Guitarra</p>
-                    <div class="artist-details">
-                        <a href="https://www.instagram.com/dario.mrls/" target="blank"><img class="rrss instagram" src="./images/rrss/ig.png"></a>
-                    </div>
                     <img class="artist-image" src="./images/dario.jpg">
+                    <p class="artist-instrument">Guitarra</p>
                 </div>
             </div>
         </div>
     </section>
-
-
-
 </main>
 
 <footer>
-
-    <h2>Siguenos en:</h2>
-
+    <h2 class="footer-title">Siguenos en:</h2>
     <figure class="social-media">
-
-        <a target="blank" href="https://open.spotify.com/artist/16atbgUEjBKuScffkkQgjw?si=KW53CTdbS72HXmQFsCkdIQ&dl_branch=1">
-            <img class="rrss spotify" src="./images/rrss/sp.png">
-        </a>
-
-        <a href="https://www.youtube.com/channel/UCDlVx30jB1kCSolgpIK48-Q">
-            <img class="rrss youtube" src="./images/rrss/yt.png">
-        </a>
-
-        <a target="blank" href="https://www.facebook.com/pegotes.banda">
-            <img class="rrss facebok" src="./images/rrss/fb.png"> 
-        </a>
-        <a target="blank" href="https://www.instagram.com/pegotes.banda/">
-            <img class="rrss instagram" src="./images/rrss/ig.png">
-        </a>
-        
+        <a target="blank" href="https://open.spotify.com/artist/16atbgUEjBKuScffkkQgjw?si=KW53CTdbS72HXmQFsCkdIQ&dl_branch=1"><img class="rrss spotify" src="./images/rrss/sp.png"></a>
+        <a target="blank" href="https://www.youtube.com/channel/UCDlVx30jB1kCSolgpIK48-Q"><img class="rrss youtube" src="./images/rrss/yt.png"></a>
+        <a target="blank" href="https://www.facebook.com/pegotes.banda"><img class="rrss facebok" src="./images/rrss/fb.png"> </a>
+        <a target="blank" href="https://www.instagram.com/pegotes.banda/"><img class="rrss instagram" src="./images/rrss/ig.png"></a>
     </figure>
-
-    <p>Todos los derechos reservados</p>
-
+    <p class="rights">Todos los derechos reservados ©</p>
 </footer>
 
-<script type="text/javascript" src="./assets/vanilla-tilt.min.js"></script>
-<script src="./assets/index.js"></script>
+<script type="text/javascript" src="./assets/vanilla-tilt.min.js">
+    VanillaTilt.init(document.querySelectorAll(".artist-card"), {
+    max: 25,
+    speed: 200
+});
+</script>
+<script src="./main.js"></script>
 </body>
 </body>
 </html>

@@ -1,44 +1,71 @@
-.menu-circle{
+.header-logo img{
+    transform: scale(1.2);
+}
+.header-button{
     width: 35px;
     height: 35px;
 }
-.menu-mobile{
-    width: 50vw;
+.menu-boton{
+    font-size: 3rem;
+    padding: 20px 10px;
+    min-width: 225px;
 }
-.active{
-    left: 50vw;
-}
-
 
 .home-title{
     font-size: 5rem;
-    bottom: 180px;
+}
+.home-button{
+    padding: 13px 15px;
+    font-size: 2rem;
 }
 
 .album{
-    height: 110vh;
+    height: 90vh;
 }
 .album-background{
-    height: 110vh;
+    height: 100%;
 }
+
 .album-title{
-    font-size: 7rem;
+    font-size: 5rem;
     margin-bottom: 30px;
 }
 .album-portada{
-    width: 80%;
-    margin-bottom: 30px;
+    width: 50%;
+    margin-bottom: 20px;
 }
 .album-details{
     width: 90%;
+    font-size: 2.5rem;
 }
-.inactive{
-    display: none;
+.album-button{
+    font-size: 2rem;
+    padding: 20px;
 }
 
-.artist-desktop{
-    display: flex;
-    flex-direction: row;
+.artist-background{
+    min-height: 700px;
 }
-footer{
+.artist-card{
+    margin: 0 30px;
+    height: 500px;
+}
+.artist-image{
+    width: 250px;
+    height: 350px;
+}
+
+
+
+.footer-title{
+    font-size: 3rem;
+}
+.social-media{
+    margin: 20px;
+}
+.rrss{
+    width: 50px;
+}
+footer .rights{
+    font-size: 1.5rem;
 }
