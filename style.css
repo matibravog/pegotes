@@ -89,7 +89,7 @@ main{
 }
 .home_video{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
 }
 .home-details{
@@ -97,7 +97,7 @@ main{
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -155,7 +155,6 @@ main{
     justify-content: center;
     width: 80%;
     height: 100%;
-    padding-top: 50px;
 }
 .album-title{
     margin: 10px 0;
@@ -164,7 +163,7 @@ main{
 }
 .album-portada{
     margin: 10px auto 0;
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -363,7 +362,7 @@ footer{
     margin: 10px;
 }
 .rrss{
-    width: 30px;
+    width: 40px;
     margin: 0 5px;
     cursor: pointer;
 }
