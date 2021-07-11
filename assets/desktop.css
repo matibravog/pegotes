@@ -24,10 +24,10 @@
     transition: 300ms;
 }
 .boton-border{
-    box-shadow: inset 10px 10px 10px 1px rgb(29, 29, 29), inset -2px -2px 10px 1px rgb(170, 170, 170);
+    box-shadow: -1px -1px 10px 1px rgba(255, 255, 255, 0.603), 8px 8px 10px 1px black;
 }
 .menu-boton:hover{
-    box-shadow: -1px -1px 10px 1px rgba(255, 255, 255, 0.603), 8px 8px 10px 1px black;
+    box-shadow: inset 10px 10px 10px 1px rgb(29, 29, 29), inset -2px -2px 10px 1px rgb(170, 170, 170);
 }
 
 .home-button{
@@ -51,11 +51,10 @@
     "title title"
     "portada text"
     "button button";
-    width: 100vw;
+    width: 70vw;
 }
 .album-portada {
-    margin: 40px;
-    justify-self: right;
+    width: 70%;
 }
 .album-title{
     grid-area: title;
@@ -64,7 +63,7 @@
     text-align: left;
     margin: 0 auto;
     font-size: 3rem;
-    width: 80%;
+    width: 100%;
 }
 .album-button{
     grid-area: button;
@@ -79,4 +78,20 @@
 }
 footer{
     padding: 5%;
+}
+
+.discografia-background{
+    height: 80vh;
+}
+.discografia-container{
+    justify-content: center;
+}
+.discografia-slide{
+    justify-content: center;
+    overflow: hidden;
+}
+.discografia-reproductor{
+    width: 300px;
+    height: 400px;
+    margin: 0px 25px;
 }
