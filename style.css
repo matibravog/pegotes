@@ -85,7 +85,7 @@ main{
     justify-content: center;
     align-items: flex-end;
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
 }
 .home_video{
     width: 100vw;
