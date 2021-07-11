@@ -31,6 +31,10 @@
 .banda-container{
     justify-content: space-evenly;
 }
+.banda-button{
+    font-size: 2rem;
+    padding: 20px;
+}
 
 .album{
     height: 90vh;
@@ -68,6 +72,12 @@
     height: 350px;
 }
 
+
+.discografia-button{
+    width: auto;
+    font-size: 2rem;
+    padding: 20px;
+}
 
 
 .footer-title{
